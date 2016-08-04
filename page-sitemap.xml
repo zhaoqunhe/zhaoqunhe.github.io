@@ -7,14 +7,14 @@
     </url>
     
     <url>
-        <loc>http://blog.itwob.com/about/</loc>
+        <loc>http://blog.itwob.com/links/</loc>
         <lastmod>2016-08-04T16:11:23.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>http://blog.itwob.com/links/</loc>
+        <loc>http://blog.itwob.com/about/</loc>
         <lastmod>2016-08-04T16:11:23.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>

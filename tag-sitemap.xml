@@ -51,6 +51,13 @@
     </url>
 
     <url>
+        <loc>http://blog.itwob.com/tags/%E5%BF%83%E6%83%85/</loc>
+        <lastmod>2016-08-04T16:11:23.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>http://blog.itwob.com/tags/Fedora/</loc>
         <lastmod>2016-08-04T16:11:23.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -73,13 +80,6 @@
 
     <url>
         <loc>http://blog.itwob.com/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/</loc>
-        <lastmod>2016-08-04T16:11:23.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://blog.itwob.com/tags/%E5%BF%83%E6%83%85/</loc>
         <lastmod>2016-08-04T16:11:23.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
