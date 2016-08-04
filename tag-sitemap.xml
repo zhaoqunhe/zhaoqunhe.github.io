@@ -51,13 +51,6 @@
     </url>
 
     <url>
-        <loc>http://blog.itwob.com/tags/%E5%BF%83%E6%83%85/</loc>
-        <lastmod>2016-08-04T16:11:23.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>http://blog.itwob.com/tags/Fedora/</loc>
         <lastmod>2016-08-04T16:11:23.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -86,6 +79,20 @@
     </url>
 
     <url>
+        <loc>http://blog.itwob.com/tags/%E5%B2%81%E6%9C%88/</loc>
+        <lastmod>2016-08-04T16:11:23.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://blog.itwob.com/tags/ikbc/</loc>
+        <lastmod>2016-08-04T16:11:23.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>http://blog.itwob.com/tags/Unix/</loc>
         <lastmod>2016-08-04T16:11:23.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -100,14 +107,7 @@
     </url>
 
     <url>
-        <loc>http://blog.itwob.com/tags/%E5%B2%81%E6%9C%88/</loc>
-        <lastmod>2016-08-04T16:11:23.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://blog.itwob.com/tags/ikbc/</loc>
+        <loc>http://blog.itwob.com/tags/%E5%BF%83%E6%83%85/</loc>
         <lastmod>2016-08-04T16:11:23.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
