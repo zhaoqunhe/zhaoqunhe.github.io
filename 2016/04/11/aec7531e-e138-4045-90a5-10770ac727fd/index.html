@@ -1,0 +1,867 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="bash,ubuntu,win10," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="iTech" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="启动功能遇到问题
+
+
+启动功能14316测试版中已经提供bash组件，默认关闭的，启用的方法是先选中“开始-&amp;gt;设置-&amp;gt;更新和安全-&amp;gt;针对开发人员-&amp;gt;开发人员模式”，然后按 Win+X,F 打开“程序和功能”，点击左侧的“启用或关闭Windows功能”，然后找到并勾选 Windows Subsystem for Linux (Beta) ，确定后会提示重启启动系统。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Windows 10 14316 bash安装错误或启动错误">
+<meta property="og:url" content="http://blog.itwob.com/2016/04/11/aec7531e-e138-4045-90a5-10770ac727fd/index.html">
+<meta property="og:site_name" content="iTech">
+<meta property="og:description" content="启动功能遇到问题
+
+
+启动功能14316测试版中已经提供bash组件，默认关闭的，启用的方法是先选中“开始-&amp;gt;设置-&amp;gt;更新和安全-&amp;gt;针对开发人员-&amp;gt;开发人员模式”，然后按 Win+X,F 打开“程序和功能”，点击左侧的“启用或关闭Windows功能”，然后找到并勾选 Windows Subsystem for Linux (Beta) ，确定后会提示重启启动系统。">
+<meta property="og:updated_time" content="2016-08-04T16:11:23.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Windows 10 14316 bash安装错误或启动错误">
+<meta name="twitter:description" content="启动功能遇到问题
+
+
+启动功能14316测试版中已经提供bash组件，默认关闭的，启用的方法是先选中“开始-&amp;gt;设置-&amp;gt;更新和安全-&amp;gt;针对开发人员-&amp;gt;开发人员模式”，然后按 Win+X,F 打开“程序和功能”，点击左侧的“启用或关闭Windows功能”，然后找到并勾选 Windows Subsystem for Linux (Beta) ，确定后会提示重启启动系统。">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://blog.itwob.com/2016/04/11/aec7531e-e138-4045-90a5-10770ac727fd/"/>
+
+  <title> Windows 10 14316 bash安装错误或启动错误 | iTech </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">iTech</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup">
+ <span class="search-icon fa fa-search"></span>
+ <input type="text" id="local-search-input">
+ <div id="local-search-result"></div>
+ <span class="popup-btn-close">close</span>
+</div>
+
+
+    </div>
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Windows 10 14316 bash安装错误或启动错误
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-04-11T06:00:51+08:00" content="2016-04-11">
+              2016-04-11
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Systems/" itemprop="url" rel="index">
+                    <span itemprop="name">Systems</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Systems/Windows/" itemprop="url" rel="index">
+                    <span itemprop="name">Windows</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <div class="wiz_toc_layer"><a href="#wiz_toc_0">启动功能</a><br><a href="#wiz_toc_1">遇到问题</a></div>
+
+<p><a href="#wizToc"></a></p>
+<h2 id="启动功能"><a href="#启动功能" class="headerlink" title="启动功能"></a>启动功能</h2><p>14316测试版中已经提供bash组件，默认关闭的，启用的方法是先选中“开始-&gt;设置-&gt;更新和安全-&gt;针对开发人员-&gt;开发人员模式”，然后按 Win+X,F 打开“程序和功能”，点击左侧的“启用或关闭Windows功能”，然后找到并勾选 Windows Subsystem for Linux (Beta) ，确定后会提示重启启动系统。 <a id="more"></a></p>
+<p>系统重启完成后，按 Win+X,A 打开命令提示符（或者按 Win+R 打开运行对话框），输入 bash 回车，第一次运行会从网上下载Ubuntu linux组件，按提示输入y。</p>
+<pre class="prettyprint linenums prettyprinted" style="">
+
+1.  `<span class="pun">--</span><span class="pln"> </span><span class="typ">Beta</span><span class="pln"> feature </span><span class="pun">--</span>`
+2.  `<span class="typ">This</span><span class="pln"> will install </span><span class="typ">Ubuntu</span><span class="pln"> on </span><span class="typ">Windows</span><span class="pun">,</span><span class="pln"> distributed </span><span class="kwd">by</span><span class="pln"> </span><span class="typ">Canonical</span>`
+3.  `<span class="kwd">and</span><span class="pln"> licensed under its terms available here</span><span class="pun">:</span>`
+4.  `<span class="pln">https</span><span class="pun">:</span><span class="com">//aka.ms/uowterms</span>`
+5.  `<span class="typ">Type</span><span class="pln"> </span><span class="str">"y"</span><span class="pln"> to </span><span class="kwd">continue</span><span class="pun">:</span><span class="pln"> y</span>`
+6.  `<span class="typ">Downloading</span><span class="pln"> </span><span class="kwd">from</span><span class="pln"> the </span><span class="typ">Windows</span><span class="pln"> </span><span class="typ">Store</span><span class="pun">...</span><span class="pln"> </span><span class="lit">100</span><span class="pun">%</span>`
+7.  `<span class="typ">Extracting</span><span class="pln"> filesystem</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">this</span><span class="pln"> will take a few minutes</span><span class="pun">...</span>`
+8.  `<span class="pun">????!</span><span class="pln"> </span><span class="pun">???????...</span>`
+9.  `<span class="pln">root@localhost</span><span class="pun">:~#</span>`</pre>
+
+<p>查看版本信息和分区映射：</p>
+<pre class="prettyprint linenums prettyprinted" style="">
+
+1.  `<span class="pln">root@localhost</span><span class="pun">:~#</span><span class="pln"> uname </span><span class="pun">-</span><span class="pln">a</span>`
+2.  `<span class="typ">Linux</span><span class="pln"> localhost </span><span class="lit">3.4.0+</span><span class="pln"> </span><span class="com">#1 PREEMPT Thu Aug 1 17:06:05 CST 2013 x86_64 x86_64 x86_64 GNU/Linux</span>`
+3.  `<span class="pln">root@localhost</span><span class="pun">:~#</span><span class="pln"> cat </span><span class="pun">/</span><span class="pln">etc</span><span class="pun">/</span><span class="pln">issue</span>`
+4.  `<span class="typ">Ubuntu</span><span class="pln"> </span><span class="lit">14.04</span><span class="pun">.</span><span class="lit">4</span><span class="pln"> LTS n l</span>`
+5.  `<span class="pln">root@localhost</span><span class="pun">:~#</span><span class="pln"> ls </span><span class="pun">-</span><span class="pln">al </span><span class="pun">/</span><span class="pln">mnt</span>`
+6.  `<span class="pln">total </span><span class="lit">24</span>`
+7.  `<span class="pln">drwxrwxr</span><span class="pun">-</span><span class="pln">x </span><span class="lit">2</span><span class="pln"> root </span><span class="lit">1000</span><span class="pln"> </span><span class="lit">0</span><span class="pln"> </span><span class="typ">Apr</span><span class="pln">  </span><span class="lit">7</span><span class="pln"> </span><span class="lit">07</span><span class="pun">:</span><span class="lit">22</span><span class="pln"> </span><span class="pun">.</span>`
+8.  `<span class="pln">drwxrwxr</span><span class="pun">-</span><span class="pln">x </span><span class="lit">2</span><span class="pln"> root root </span><span class="lit">0</span><span class="pln"> </span><span class="typ">Apr</span><span class="pln">  </span><span class="lit">7</span><span class="pln"> </span><span class="lit">07</span><span class="pun">:</span><span class="lit">22</span><span class="pln"> </span><span class="pun">..</span>`
+9.  `<span class="pln">drwxrwxrwx </span><span class="lit">2</span><span class="pln"> root root </span><span class="lit">0</span><span class="pln"> </span><span class="typ">Apr</span><span class="pln">  </span><span class="lit">7</span><span class="pln"> </span><span class="lit">06</span><span class="pun">:</span><span class="lit">58</span><span class="pln"> c</span>`
+10.  `<span class="pln">drwxrwxrwx </span><span class="lit">2</span><span class="pln"> root root </span><span class="lit">0</span><span class="pln"> </span><span class="typ">Apr</span><span class="pln">  </span><span class="lit">7</span><span class="pln"> </span><span class="lit">04</span><span class="pun">:</span><span class="lit">59</span><span class="pln"> d</span>`
+11.  `<span class="pln">root@localhost</span><span class="pun">:~#</span>`</pre>
+
+<h2 id="遇到问题"><a href="#遇到问题" class="headerlink" title="遇到问题"></a>遇到问题</h2><p>注意是root用户，/dev 下也没有很多的设备，输入 exit 可退出bash。 </p>
+<p> /root 目录对应Windows系统的 %localappdata%lxssroot 文件夹（注意，不要删除lxss目录，bash会失败）。 </p>
+<p><strong><em>如果不幸删除了lxss或者其他原因 bash 启动失败。可以在CMD里用下面两条命令卸载再重新安装：</em></strong></p>
+<pre class="prettyprint linenums prettyprinted" style="">
+
+1.  `<span class="pln">echo y</span><span class="pun">|</span><span class="pln">lxrun </span><span class="pun">/</span><span class="pln">uninstall </span>`
+2.  `<span class="pln">echo y</span><span class="pun">|</span><span class="pln">lxrun </span><span class="pun">/</span><span class="pln">install</span>`</pre>
+
+<p>使用命令 apt-get 安装软件前建议先在 /etc/apt/sources.list 文件前端添加国内的镜像服务器， <a href="http://mirrors.163.com/ubuntu" target="_blank" rel="external">http://mirrors.163.com/ubuntu</a> 是163的镜像源：</p>
+<pre class="prettyprint linenums prettyprinted" style="">
+
+1.  `<span class="pln">deb http</span><span class="pun">:</span><span class="com">//mirrors.163.com/ubuntu trusty main restricted universe multiverse </span>`
+2.  `<span class="pln">deb http</span><span class="pun">:</span><span class="com">//mirrors.163.com/ubuntu trusty-upadates main restricted universe multiverse </span>`
+3.  `<span class="pln">deb http</span><span class="pun">:</span><span class="com">//mirrors.163.com/ubuntu trusty-security main restricted universe multiverse</span>`</pre>
+
+<p>然后用 apt-get update 命令更新源（163的更新源最后会出现一些校验警告，可以忽略）。 </p>
+<p>还有一种方式，在刚刚安装好bash后，用支持LF换行的文本编辑器修改sources.list文件（下面的顺序中C:&gt;表示CMD下，#表示在bash下）</p>
+<pre class="prettyprint linenums prettyprinted" style="">
+
+1.  `<span class="pln">C</span><span class="pun">:</span><span class="pln">&gt; echo y</span><span class="pun">|</span><span class="pln">lxrun </span><span class="pun">/</span><span class="pln">uninstall           </span><span class="com">// 卸载linux子系统</span>`
+2.  `<span class="pln">C</span><span class="pun">:</span><span class="pln">&gt; rmdir </span><span class="pun">/</span><span class="pln">s </span><span class="pun">/</span><span class="pln">q </span><span class="pun">%</span><span class="pln">localappdata</span><span class="pun">%</span><span class="pln">lxss   </span><span class="com">// 删除lxss文件夹</span>`
+3.  `<span class="pln">C</span><span class="pun">:</span><span class="pln">&gt; echo y</span><span class="pun">|</span><span class="pln">lxrun </span><span class="pun">/</span><span class="pln">install             </span><span class="com">// 安装linux子系统，如果网络不好可以多试几次。</span>`
+4.  `<span class="pln">C</span><span class="pun">:</span><span class="pln">&gt; bash</span>`
+5.  `<span class="com"># touch /etc/apt/sources.list</span>`
+6.  `<span class="com"># exit</span>`
+7.  `<span class="pln">C</span><span class="pun">:</span><span class="pln">&gt; notepad2 </span><span class="pun">%</span><span class="pln">localappdata</span><span class="pun">%</span><span class="pln">Lxssrootfsetcaptsources</span><span class="pun">.</span><span class="pln">list          </span><span class="com">// 用notepad2文本编辑器粘贴163镜像</span>`
+8.9.  `<span class="pun">----------以下为文件内容-----------</span>`
+10.  `<span class="com"># %localappdata%Lxssrootfsetcaptsources.list</span>`
+11.  `<span class="com"># 163</span>`
+12.  `<span class="pln">deb http</span><span class="pun">:</span><span class="com">//mirrors.163.com/ubuntu trusty main restricted</span>`
+13.  `<span class="pln">deb</span><span class="pun">-</span><span class="pln">src http</span><span class="pun">:</span><span class="com">//mirrors.163.com/ubuntu trusty main restricted</span>`
+14.  `<span class="pln">deb http</span><span class="pun">:</span><span class="com">//mirrors.163.com/ubuntu trusty-security main restricted</span>`
+15.  `<span class="pln">deb</span><span class="pun">-</span><span class="pln">src http</span><span class="pun">:</span><span class="com">//mirrors.163.com/ubuntu trusty-security main restricted</span>`
+16.  `<span class="pln">deb http</span><span class="pun">:</span><span class="com">//mirrors.163.com/ubuntu trusty-updates main restricted</span>`
+17.  `<span class="pln">deb</span><span class="pun">-</span><span class="pln">src http</span><span class="pun">:</span><span class="com">//mirrors.163.com/ubuntu trusty-updates main restricted</span>`
+18.  `<span class="com"># ubuntu</span>`
+19.  `<span class="com">#deb http://us.archive.ubuntu.com/ubuntu trusty main restricted</span>`
+20.  `<span class="com">#deb-src http://us.archive.ubuntu.com/ubuntu trusty main restricted</span>`
+21.  `<span class="com">#deb http://security.ubuntu.com/ubuntu trusty-security main restricted</span>`
+22.  `<span class="com">#deb-src http://security.ubuntu.com/ubuntu trusty-security main restricted</span>`
+23.  `<span class="com">#deb http://us.archive.ubuntu.com/ubuntu trusty-updates main restricted</span>`
+24.  `<span class="com">#deb-src http://us.archive.ubuntu.com/ubuntu trusty-updates main restricted</span>`
+25.  `<span class="pun">----------文件内容结束----------</span>`
+26.27.  `<span class="pln">C</span><span class="pun">:</span><span class="pln">&gt; lxrun </span><span class="pun">/</span><span class="pln">update             </span><span class="com">//更新apt源</span>`</pre>
+
+<p>安装 git：</p>
+<pre class="prettyprint linenums prettyprinted" style="">
+
+1.  `<span class="pln">apt</span><span class="pun">-</span><span class="kwd">get</span><span class="pln"> </span><span class="pun">--</span><span class="pln">assume</span><span class="pun">-</span><span class="pln">yes install git</span>`</pre>
+
+<blockquote>
+<p>部分内容转自 Bob-wei博客</p>
+</blockquote>
+<div><a href="http://www.wiz.cn/i/e088b595" title="来自为知笔记(Wiz)" target="_blank" rel="external">来自为知笔记(Wiz)</a></div>
+
+<div><br><br>### 附件列表<br><br>*   <a href="http://www.itwob.com/wp-content/uploads/2016/04/wpid-9f9e02fcac3daf792b9269e93449e029_windowsubuntulogo.png" target="_blank" rel="external">windowsubuntulogo.png</a></div>
+
+<p>&nbsp;</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/bash/" rel="tag">#bash</a>
+          
+            <a href="/tags/ubuntu/" rel="tag">#ubuntu</a>
+          
+            <a href="/tags/win10/" rel="tag">#win10</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/03/14/ikbc-test/" rel="next" title="入手ikbc c87键盘，还不错，入门推荐">
+                <i class="fa fa-chevron-left"></i> 入手ikbc c87键盘，还不错，入门推荐
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/05/14/e7-9f-9b-e7-9b-be/" rel="prev" title="矛盾">
+                矛盾 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="Joe ZHAO" />
+          <p class="site-author-name" itemprop="name">Joe ZHAO</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">21</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              
+                <span class="site-state-item-count">8</span>
+                <span class="site-state-item-name">分类</span>
+              
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">16</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#启动功能"><span class="nav-number">1.</span> <span class="nav-text">启动功能</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#遇到问题"><span class="nav-number">2.</span> <span class="nav-text">遇到问题</span></a></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Joe ZHAO</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+  
+  
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length == 0) {
+       search_path = "search.xml";
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    function proceedsearch() {
+      $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
+      $('.popup').toggle();
+
+    }
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+    'use strict';
+    $.ajax({
+        url: path,
+        dataType: "xml",
+        async: true,
+        success: function( xmlResponse ) {
+            // get the contents from search data
+            isfetched = true;
+            $('.popup').detach().appendTo('.header-inner');
+            var datas = $( "entry", xmlResponse ).map(function() {
+                return {
+                    title: $( "title", this ).text(),
+                    content: $("content",this).text(),
+                    url: $( "url" , this).text()
+                };
+            }).get();
+            var $input = document.getElementById(search_id);
+            var $resultContent = document.getElementById(content_id);
+            $input.addEventListener('input', function(){
+                var matchcounts = 0;
+                var str='<ul class=\"search-result-list\">';
+                var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                $resultContent.innerHTML = "";
+                if (this.value.trim().length > 1) {
+                // perform local searching
+                datas.forEach(function(data) {
+                    var isMatch = true;
+                    var content_index = [];
+                    var data_title = data.title.trim().toLowerCase();
+                    var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
+                    var data_url = data.url;
+                    var index_title = -1;
+                    var index_content = -1;
+                    var first_occur = -1;
+                    // only match artiles with not empty titles and contents
+                    if(data_title != '' && data_content != '') {
+                        keywords.forEach(function(keyword, i) {
+                            index_title = data_title.indexOf(keyword);
+                            index_content = data_content.indexOf(keyword);
+                            if( index_title < 0 && index_content < 0 ){
+                                isMatch = false;
+                            } else {
+                                if (index_content < 0) {
+                                    index_content = 0;
+                                }
+                                if (i == 0) {
+                                    first_occur = index_content;
+                                }
+                            }
+                        });
+                    }
+                    // show search results
+                    if (isMatch) {
+                        matchcounts += 1;
+                        str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
+                        var content = data.content.trim().replace(/<[^>]+>/g,"");
+                        if (first_occur >= 0) {
+                            // cut out 100 characters
+                            var start = first_occur - 20;
+                            var end = first_occur + 80;
+                            if(start < 0){
+                                start = 0;
+                            }
+                            if(start == 0){
+                                end = 50;
+                            }
+                            if(end > content.length){
+                                end = content.length;
+                            }
+                            var match_content = content.substring(start, end);
+                            // highlight all keywords
+                            keywords.forEach(function(keyword){
+                                var regS = new RegExp(keyword, "gi");
+                                match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
+                            });
+
+                            str += "<p class=\"search-result\">" + match_content +"...</p>"
+                        }
+                        str += "</li>";
+                    }
+                })};
+                str += "</ul>";
+                if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
+                if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
+                $resultContent.innerHTML = str;
+            });
+            proceedsearch();
+        }
+    });}
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched == false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+
+    });
+
+    $('.popup-btn-close').click(function(e){
+      $('.popup').hide();
+      $(".popoverlay").remove();
+      $('body').css('overflow', '');
+    });
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+  </script>
+
+
+  
+
+  
+
+  
+
+</body>
+</html>
