@@ -28,13 +28,6 @@
     </url>
 
     <url>
-        <loc>http://blog.itwob.com/categories/Windows/</loc>
-        <lastmod>2016-08-04T16:11:23.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>http://blog.itwob.com/categories/Systems/Windows/</loc>
         <lastmod>2016-08-04T16:11:23.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -43,6 +36,13 @@
 
     <url>
         <loc>http://blog.itwob.com/categories/Linux-Unix/</loc>
+        <lastmod>2016-08-04T16:11:23.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://blog.itwob.com/categories/Windows/</loc>
         <lastmod>2016-08-04T16:11:23.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
