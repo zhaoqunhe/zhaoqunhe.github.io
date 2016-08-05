@@ -7,7 +7,7 @@
     </url>
 
     <url>
-        <loc>http://blog.itwob.com/categories/Systems/</loc>
+        <loc>http://blog.itwob.com/categories/Views/</loc>
         <lastmod>2016-08-04T16:11:23.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -21,7 +21,7 @@
     </url>
 
     <url>
-        <loc>http://blog.itwob.com/categories/Views/</loc>
+        <loc>http://blog.itwob.com/categories/Systems/</loc>
         <lastmod>2016-08-04T16:11:23.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -35,20 +35,6 @@
     </url>
 
     <url>
-        <loc>http://blog.itwob.com/categories/Windows/</loc>
-        <lastmod>2016-08-04T16:11:23.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://blog.itwob.com/categories/Hardware/</loc>
-        <lastmod>2016-08-04T16:11:23.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>http://blog.itwob.com/categories/Linux-Unix/</loc>
         <lastmod>2016-08-04T16:11:23.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -56,7 +42,21 @@
     </url>
 
     <url>
+        <loc>http://blog.itwob.com/categories/Windows/</loc>
+        <lastmod>2016-08-04T16:11:23.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>http://blog.itwob.com/categories/Linux-Unix/Views/</loc>
+        <lastmod>2016-08-04T16:11:23.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://blog.itwob.com/categories/Hardware/</loc>
         <lastmod>2016-08-04T16:11:23.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>

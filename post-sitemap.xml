@@ -15,7 +15,7 @@
     </url>
 
     <url>
-        <loc>http://blog.itwob.com/2016/04/11/aec7531e-e138-4045-90a5-10770ac727fd/</loc>
+        <loc>http://blog.itwob.com/2016/06/19/153/</loc>
         <lastmod>2016-08-04T16:11:23.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -31,7 +31,15 @@
     </url>
 
     <url>
-        <loc>http://blog.itwob.com/2016/06/19/153/</loc>
+        <loc>http://blog.itwob.com/2016/04/11/aec7531e-e138-4045-90a5-10770ac727fd/</loc>
+        <lastmod>2016-08-04T16:11:23.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://blog.itwob.com/2015/12/16/4a9536f85fdea3c94de427ef39e9c92e/</loc>
         <lastmod>2016-08-04T16:11:23.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -47,7 +55,7 @@
     </url>
 
     <url>
-        <loc>http://blog.itwob.com/2015/06/16/e5-8f-a6-e4-b8-80-e4-b8-aa-e6-88-91/</loc>
+        <loc>http://blog.itwob.com/2016/06/16/e4-bc-8f-e6-97-b1/</loc>
         <lastmod>2016-08-04T16:11:23.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -63,15 +71,7 @@
     </url>
 
     <url>
-        <loc>http://blog.itwob.com/2016/06/16/e4-bc-8f-e6-97-b1/</loc>
-        <lastmod>2016-08-04T16:11:23.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://blog.itwob.com/2015/12/16/4a9536f85fdea3c94de427ef39e9c92e/</loc>
+        <loc>http://blog.itwob.com/2015/06/16/e5-8f-a6-e4-b8-80-e4-b8-aa-e6-88-91/</loc>
         <lastmod>2016-08-04T16:11:23.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -95,6 +95,14 @@
     </url>
 
     <url>
+        <loc>http://blog.itwob.com/2016/05/14/e7-9f-9b-e7-9b-be/</loc>
+        <lastmod>2016-08-04T16:11:23.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://blog.itwob.com/2016/06/20/e7-95-85-e6-83-b3-e8-81-8c-e4-b8-9a-e8-a7-84-e5-88-92-e4-b8-80/</loc>
         <lastmod>2016-08-04T16:11:23.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -103,7 +111,7 @@
     </url>
 
     <url>
-        <loc>http://blog.itwob.com/2016/05/14/e7-9f-9b-e7-9b-be/</loc>
+        <loc>http://blog.itwob.com/2016/01/10/e5f957ad-77b3-45c3-8fc8-321ea1be6cbe/</loc>
         <lastmod>2016-08-04T16:11:23.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -119,14 +127,6 @@
     </url>
 
     <url>
-        <loc>http://blog.itwob.com/2015/11/18/e9-9b-a8/</loc>
-        <lastmod>2016-08-04T16:11:23.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>http://blog.itwob.com/2016/05/20/e9-9b-a8-e5-a4-a9/</loc>
         <lastmod>2016-08-04T16:11:23.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -135,7 +135,7 @@
     </url>
 
     <url>
-        <loc>http://blog.itwob.com/2016/05/25/ef-bb-bf-e4-b8-8a-e6-b5-b7-e4-ba-94-e6-9c-88/</loc>
+        <loc>http://blog.itwob.com/2015/11/18/e9-9b-a8/</loc>
         <lastmod>2016-08-04T16:11:23.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -144,6 +144,14 @@
 
     <url>
         <loc>http://blog.itwob.com/2015/12/08/hello-world-1/</loc>
+        <lastmod>2016-08-04T16:11:23.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://blog.itwob.com/2016/05/25/ef-bb-bf-e4-b8-8a-e6-b5-b7-e4-ba-94-e6-9c-88/</loc>
         <lastmod>2016-08-04T16:11:23.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -160,14 +168,6 @@
 
     <url>
         <loc>http://blog.itwob.com/2016/03/14/ikbc-test/</loc>
-        <lastmod>2016-08-04T16:11:23.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://blog.itwob.com/2016/01/10/e5f957ad-77b3-45c3-8fc8-321ea1be6cbe/</loc>
         <lastmod>2016-08-04T16:11:23.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
